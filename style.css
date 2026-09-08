@@ -1,0 +1,11 @@
+.background{
+    inset: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+}
+.Pcontent{
+    color: white;
+}
