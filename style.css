@@ -11,6 +11,7 @@
 }
 .softk table{
     border-collapse: collapse;
+    width: 100%;
 }
 .softk table td{
     border: 1px solid white;
