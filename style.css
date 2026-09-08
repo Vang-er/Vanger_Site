@@ -9,3 +9,15 @@
 .Pcontent{
     color: white;
 }
+.softk table{
+    border-collapse: collapse;
+}
+.softk table td{
+    border: 1px solid white;
+    padding: 10px;
+}
+.softk table th{
+    background-color: blue;
+    color: red;
+    padding: 10px;
+}
