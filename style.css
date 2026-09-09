@@ -13,12 +13,34 @@
     border-collapse: collapse;
     width: 100%;
 }
-.softk table td{
+.softk table tr td{
     border: 1px solid white;
     padding: 10px;
 }
-.softk table th{
-    background-color: blue;
-    color: red;
-    padding: 10px;
+.softk table tr td:first-child,.softk table tr td:last-child{
+    width: 1%;
+    white-space: nowarp;
+}
+.sslider{
+    transition: ease-in 5s ;
+}
+.track{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+}
+@keyframes fill {
+    from{
+        width: 0%;
+    }
+}
+.track div{
+    height: 100%;
+    width: 0%;
+    animation: fill 2s forwards;
+}
+.background{
+    width: 100vw;
+    height: 100vh;
 }
