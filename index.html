@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <canva class="background"></canva>
+        <canvas id="background"></canvas>
         <div class="Pcontent">
             <div style="display: flex; justify-content: center; font-family: 'Roboto ,sans-serif'; font-size:35px; margin-top:20px;">This is </div>
              <div style="display: flex; justify-content: center; font-family: 'Cinzel' ,serif; font-size: 70px; margin-top: 20px;">Mohammed Sahber Abdelazeem </div>
@@ -34,5 +34,39 @@
                 <tr><td>Game dev</td><td><div class="track"><div style="width: 20%; background-color: yellow;"></div></div></td><td>begginer</td></tr>
              </table></div>
         </div>
+        <script>
+            const canva = document.getElementById("background");
+            const ctx = canva.getContext("2d");
+            canva.width = window.innerWidth;
+            canva.height = window.innerHeight;
+            const characters = "ضصثقفغعهخحجدشسيبلاتنمكطئءؤرﻻىةوزظذإآﻵﻷabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン@#$%^&*()*&^%+-/~{[|`]}<>".split("");
+            const font = 20;
+            const columns = canva.width /font
+            const drops = [];
+            for(let i = 0;i < columns;i++){
+                drops[i] = 1;
+            }
+            function draw(){
+                ctx.fillStyle = "rgba(0,0,0,0.05)";
+                ctx.fillRect(0, 0, canva.width, canva.height);
+                ctx.fillStyle = "#1d5e0c";
+                ctx.font = `${font}px monospace`;
+                for(let i = 0;i<drops.length;i++){
+                    const text = characters[Math.floor(Math.random() * characters.length)];
+                    ctx.fillText(text,i*font,drops[i]*font);
+                    drops[i]++
+                    if(drops[i]*font > canva.height && Math.random() > 0.975){
+                        drops[i] = 0;
+                    }
+                    
+                }
+
+            }
+            setInterval(draw,50)
+            window.addEventListener("resize",() =>{
+                canva.width = window.innerWidth;
+            canva.height = window.innerHeight;
+            })
+        </script>
     </body>
 </html>
