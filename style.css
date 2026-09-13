@@ -1,58 +1,59 @@
-#background{
-    inset: 0;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    z-index: -1;
+#background {
+  inset: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
 }
-.Pcontent{
-    color: white;
+.Pcontent {
+  color: white;
 }
-.softk table{
-    border-spacing: 0px;
-    border-radius: 20px;
-    border-collapse: separate;
-    width: 100%;
-    overflow: hidden;
+.softk table {
+  border-spacing: 0px;
+  border-radius: 20px;
+  border-collapse: separate;
+  width: 100%;
+  overflow: hidden;
 }
-.softk table tr{
-    /* background-color: rgba(36, 74, 30, 0.636); */
-    background-color: rgba(83, 83, 83, 0.406);
-    border: 0px;
-    border-radius: 40px;
+.softk table tr {
+  /* background-color: rgba(36, 74, 30, 0.636); */
+  background-color: rgba(83, 83, 83, 0.406);
+  border: 0px;
+  border-radius: 40px;
 }
-.softk table tr td{
-    /* border: 1px solid white; */
-    padding: 10px;
+.softk table tr td {
+  /* border: 1px solid white; */
+  padding: 10px;
 }
-.softk table tr td:first-child,.softk table tr td:last-child{
-    width: 1%;
-    white-space: nowarp;
+.softk table tr td:first-child,
+.softk table tr td:last-child {
+  width: 1%;
+  white-space: nowarp;
 }
-.sslider{
-    transition: ease-in 5s ;
+.sslider {
+  transition: ease-in 5s;
 }
-.track{
-    width: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 20px;
+.track {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
 }
 @keyframes fill {
-    from{
-        width: 0%;
-    }
-}
-.track div{
-    height: 100%;
+  from {
     width: 0%;
-    animation: fill 2s forwards;
+  }
 }
-.background{
-    width: 100vw;
-    height: 100vh;
+.track div {
+  height: 100%;
+  width: 0%;
+  animation: fill 2s forwards;
 }
-.progress{
-    background: transparent;
+.background {
+  width: 100vw;
+  height: 100vh;
+}
+.progress {
+  background: transparent;
 }

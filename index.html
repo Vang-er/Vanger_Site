@@ -1,132 +1,398 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Vanger's Site</title>
-        <link rel="icon" href="fav.ico">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <canvas id="background"></canvas>
-        <div class="setwindow" style="position:fixed; right: 30px; bottom: 30px; width: 250px;height: 150px; background-color: rgba(31, 48, 28, 0.823); border-radius: 20px; display: grid; grid-template-columns: 50px 1fr ; grid-template-rows: 1fr 1fr 1fr; align-items: center;">
-            <input type="color" id="colorsec" style=" display:grid;cursor:pointer;border: none;padding: 0px; border-radius: 40px; width: 40px; height: 40px; display: grid; place-items: center; margin-left: 10px;">
-            <div style="color: white; display:grid; place-items:center ;font-size:large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Set rain Colour</div>
-            <input id="autocolor" type="checkbox" style="display: grid; place-items: center; margin-left: 10px; width: 30px; margin-top: 10px; margin-left: 20px; width: 20px; height: 20px;">
-            <div style="color: white; display: grid;cursor: pointer; place-items: center;">Auto Changing color</div>
-            <input id="raincheck" type="checkbox" style="display: grid; place-items: center; margin-left: 10px; width: 30px; margin-left: 20px; width: 20px; height: 20px; ">
-            <div style="color: white; display: grid;cursor: pointer; place-items: center;">Turn off the rain</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vanger's Site</title>
+    <link rel="icon" href="fav.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas id="background"></canvas>
+    <div
+      class="setwindow"
+      style="
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        width: 250px;
+        height: 150px;
+        background-color: rgba(31, 48, 28, 0.823);
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+      "
+    >
+      <input
+        type="color"
+        id="colorsec"
+        style="
+          display: grid;
+          cursor: pointer;
+          border: none;
+          padding: 0px;
+          border-radius: 40px;
+          width: 40px;
+          height: 40px;
+          display: grid;
+          place-items: center;
+          margin-left: 10px;
+        "
+      />
+      <div
+        style="
+          color: white;
+          display: grid;
+          place-items: center;
+          font-size: large;
+          font-family:
+            &quot;Segoe UI&quot;, Tahoma, Geneva, Verdana, sans-serif;
+        "
+      >
+        Set rain Colour
+      </div>
+      <input
+        id="autocolor"
+        type="checkbox"
+        style="
+          display: grid;
+          place-items: center;
+          margin-left: 10px;
+          width: 30px;
+          margin-top: 10px;
+          margin-left: 20px;
+          width: 20px;
+          height: 20px;
+        "
+      />
+      <div
+        style="
+          color: white;
+          display: grid;
+          cursor: pointer;
+          place-items: center;
+        "
+      >
+        Auto Changing color
+      </div>
+      <input
+        id="raincheck"
+        type="checkbox"
+        style="
+          display: grid;
+          place-items: center;
+          margin-left: 10px;
+          width: 30px;
+          margin-left: 20px;
+          width: 20px;
+          height: 20px;
+        "
+      />
+      <div
+        style="
+          color: white;
+          display: grid;
+          cursor: pointer;
+          place-items: center;
+        "
+      >
+        Turn off the rain
+      </div>
+    </div>
+    <div class="Pcontent">
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          font-family: &quot;Roboto ,sans-serif&quot;;
+          font-size: 35px;
+          margin-top: 20px;
+        "
+      >
+        This is
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          font-family: &quot;Cinzel&quot;, serif;
+          font-size: 70px;
+          margin-top: 20px;
+        "
+      >
+        Mohammed Sahber Abdelazeem
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          font-family: &quot;Roboto ,sans-serif&quot;;
+          font-size: 12.5px;
+          margin-bottom: 10px;
+        "
+      >
+        and also known as Vanger
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          font-family: &quot;Roboto ,sans-serif&quot;;
+        "
+      >
+        A passistonte 16 years old Student from Suez,Egypt interested in Science
+        in general and in Programming,Electronic and CAD !!
+      </div>
+      <div class="softk" style="border-collapse: collapse; margin: 50px 30px">
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 10px;
+          "
+        >
+          Soft Skills
         </div>
-        <div class="Pcontent">
-            <div style="display: flex; justify-content: center; font-family: 'Roboto ,sans-serif'; font-size:35px; margin-top:20px;">This is </div>
-             <div style="display: flex; justify-content: center; font-family: 'Cinzel' ,serif; font-size: 70px; margin-top: 20px;">Mohammed Sahber Abdelazeem </div>
-             <div style="display: flex; justify-content: center; font-family: 'Roboto ,sans-serif'; font-size: 12.5px; margin-bottom: 10px;">and also known as Vanger</div>
-             <div style="display: flex; justify-content: center; font-family: 'Roboto ,sans-serif';">A passistonte 16 years old Student from Suez,Egypt interested in Science in general and in Programming,Electronic and CAD !!</div>
-             <div class="softk" style="border-collapse: collapse; margin: 50px 30px ; ">
-                <div style="display: flex; justify-content: center; font-weight: bold; font-size: 25px; margin-bottom: 10px;">Soft Skills</div>
-                <table>
-                <tr><td>communication</td><span style="width: 5px;"></span><td class="progress"><div class="track"><div style="width: 80%; background-color: brown;"></div></div></td><td>Execllent</td></tr>
-                <tr><td>negotaition</td><td class="progress"><div class="track"><div style="width: 70%; background-color: blue;"></div></div></td><td>Execllent</td></tr>
-                <tr><td>Time mangement</td><td class="progress"><div class="track"><div style="width: 50%; background-color: indigo;"></div></div></td><td>Execllent</td></tr>
-                <tr><td>Planning</td><td class="progress"><div class="track"><div style="width: 90%; background-color: aqua;"></div></div></td><td>Execllent</td></tr>
-             </table></div>
-             <div class="softk" style="border-collapse: collapse; margin: 50px 30px ; ">
-                <div style="display: flex; justify-content: center; font-weight: bold; font-size: 25px; margin-bottom: 10px;">Techincal Skills</div>
-                <table>
-                <tr><td>Front-end</td><td class="progress"><div class="track"><div style="width: 70%; background-color: red;"></div></div></td><td>Good</td></tr>
-                <tr><td>back-end</td><td class="progress"><div class="track"><div style="width: 40%; background-color: indianred;"></div></div></td><td>intermediate</td></tr>
-                <tr><td>mobile dev</td><td class="progress"><div class="track"><div style="width: 60%; background-color: green;"></div></div></td><td>decent</td></tr>
-                <tr><td>Game dev</td><td class="progress"><div class="track"><div style="width: 20%; background-color: yellow;"></div></div></td><td>begginer</td></tr>
-                <tr><td>CAD</td><td class="progress"><div class="track"><div style="width: 50%; background-color: violet;"></div></div></td><td>intermediate</td></tr>
-             </table></div>
-             <div class="quote" style="display: grid; grid-template-columns: 20% 1fr; width: 100%; ">
-                <div style="display: flex; flex-direction: column; align-items: center;">
-                    <img src="ME.JPG" style="width: 80%;height: auto; border-radius: 100px; overflow: hidden; margin-left:30px; position: relative;">
-                    <div style="place-items: center; position: relative; justify-content: center;align-items: center;">
-                        Me after Discovering HackClub
-                    </div>
-                    </div>
-<div  style=" display:flex ;font-size: 40px; vertical-align: middle; place-items: center; align-items: center; font-style: italic;"><q></q>Hack Club is like my bigger family ,it is the community and the place where i feel supported and encourged</div>
-            </div>
+        <table>
+          <tr>
+            <td>communication</td>
+            <span style="width: 5px"></span>
+            <td class="progress">
+              <div class="track">
+                <div style="width: 80%; background-color: brown"></div>
+              </div>
+            </td>
+            <td>Execllent</td>
+          </tr>
+          <tr>
+            <td>negotaition</td>
+            <td class="progress">
+              <div class="track">
+                <div style="width: 70%; background-color: blue"></div>
+              </div>
+            </td>
+            <td>Execllent</td>
+          </tr>
+          <tr>
+            <td>Time mangement</td>
+            <td class="progress">
+              <div class="track">
+                <div style="width: 50%; background-color: indigo"></div>
+              </div>
+            </td>
+            <td>Execllent</td>
+          </tr>
+          <tr>
+            <td>Planning</td>
+            <td class="progress">
+              <div class="track">
+                <div style="width: 90%; background-color: aqua"></div>
+              </div>
+            </td>
+            <td>Execllent</td>
+          </tr>
+        </table>
+      </div>
+      <div class="softk" style="border-collapse: collapse; margin: 50px 30px">
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 10px;
+          "
+        >
+          Techincal Skills
         </div>
-        <script>
-            let clearinter ;
-            const canva = document.getElementById("background");
-            const ctx = canva.getContext("2d");
-            canva.width = window.innerWidth;
-            canva.height = window.innerHeight;
-            const characters = "ضصثقفغعهخحجدشسيبلاتنمكطئءؤرﻻىةوزظذإآﻵﻷabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン@#$%^&*()*&^%+-/~{[|`]}<>".split("");
-            const font = 20;
-            var font_color = "#1d5e0c"
-            func_intveral = 50;
-            const columns = canva.width /font
-            const drops = [];
-            let autotime = 1000;
-            let colorinter;
-            let raininter ;
-            let raincheck = document.getElementById("raincheck");
-            for(let i = 0;i < columns;i++){
-                drops[i] = 1;
-            }
-            function clearrain(){
-                ctx.fillStyle = "rgba(0,0,0,0.05)";
-                ctx.fillRect(0, 0, canva.width, canva.height);
-            }
-            function randcolor(){
-                let color = "#"
-                let red = ((Math.floor(Math.random() * 256)).toString(16)).padStart(2,"0")
-                let green = (Math.floor(Math.random() * 256)).toString(16).padStart(2,"0")
-                let blue = (Math.floor(Math.random() * 256)).toString(16).padStart(2,"0")
-                font_color = color + red + green + blue;
-            }
-            function draw(){
-                ctx.fillStyle = "rgba(0,0,0,0.05)";
-                ctx.fillRect(0, 0, canva.width, canva.height);
-                ctx.fillStyle = font_color;
-                ctx.font = `${font}px monospace`;
-                for(let i = 0;i<drops.length;i++){
-                    const text = characters[Math.floor(Math.random() * characters.length)];
-                    ctx.fillText(text,i*font,drops[i]*font);
-                    drops[i]++
-                    if(drops[i]*font > canva.height && Math.random() > 0.975){
-                        drops[i] = 0;
-                    }
-                    
-                }
-
-            }
-            raininter = setInterval(draw,func_intveral);
-            window.addEventListener("resize",() =>{
-                canva.width = window.innerWidth;
-            canva.height = window.innerHeight;
-            })
-        const colorsec = document.getElementById("colorsec")
-        colorsec.value = font_color;
-        colorsec.addEventListener("input" ,() => {
-            font_color = colorsec.value;
-        })
-        let colorcheckbox = document.getElementById("autocolor");
-        colorcheckbox.addEventListener("change" ,() => {
-if (colorcheckbox.checked == true){
-        colorinter = setInterval(randcolor,1000);
-        }else if(colorcheckbox.checked == false){
-            clearInterval(colorinter);
+        <table>
+          <tr>
+            <td>Front-end</td>
+            <td class="progress">
+              <div class="track">
+                <div style="width: 70%; background-color: red"></div>
+              </div>
+            </td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>back-end</td>
+            <td class="progress">
+              <div class="track">
+                <div style="width: 40%; background-color: indianred"></div>
+              </div>
+            </td>
+            <td>intermediate</td>
+          </tr>
+          <tr>
+            <td>mobile dev</td>
+            <td class="progress">
+              <div class="track">
+                <div style="width: 60%; background-color: green"></div>
+              </div>
+            </td>
+            <td>decent</td>
+          </tr>
+          <tr>
+            <td>Game dev</td>
+            <td class="progress">
+              <div class="track">
+                <div style="width: 20%; background-color: yellow"></div>
+              </div>
+            </td>
+            <td>begginer</td>
+          </tr>
+          <tr>
+            <td>CAD</td>
+            <td class="progress">
+              <div class="track">
+                <div style="width: 50%; background-color: violet"></div>
+              </div>
+            </td>
+            <td>intermediate</td>
+          </tr>
+        </table>
+      </div>
+      <div
+        class="quote"
+        style="display: grid; grid-template-columns: 20% 1fr; width: 100%"
+      >
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img
+            src="ME.JPG"
+            style="
+              width: 80%;
+              height: auto;
+              border-radius: 100px;
+              overflow: hidden;
+              margin-left: 30px;
+              position: relative;
+            "
+          />
+          <div
+            style="
+              place-items: center;
+              position: relative;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            Me after Discovering HackClub
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            font-size: 60px;
+            vertical-align: middle;
+            font-style: italic;
+          "
+        >
+          <q style="display: inline"
+            >Hack Club is like my bigger family ,it is the community and the
+            place where i feel supported and encourged</q
+          ><span style="font-size: medium; font-style: normal"
+            >Mohammed S. Abdelazeem</span
+          >
+        </div>
+      </div>
+    </div>
+    <script>
+      let clearinter;
+      const canva = document.getElementById("background");
+      const ctx = canva.getContext("2d");
+      canva.width = window.innerWidth;
+      canva.height = window.innerHeight;
+      const characters =
+        "ضصثقفغعهخحجدشسيبلاتنمكطئءؤرﻻىةوزظذإآﻵﻷabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン@#$%^&*()*&^%+-/~{[|`]}<>".split(
+          "",
+        );
+      const font = 20;
+      var font_color = "#1d5e0c";
+      func_intveral = 50;
+      const columns = canva.width / font;
+      const drops = [];
+      let autotime = 1000;
+      let colorinter;
+      let raininter;
+      let raincheck = document.getElementById("raincheck");
+      for (let i = 0; i < columns; i++) {
+        drops[i] = 1;
+      }
+      function clearrain() {
+        ctx.fillStyle = "rgba(0,0,0,0.05)";
+        ctx.fillRect(0, 0, canva.width, canva.height);
+      }
+      function randcolor() {
+        let color = "#";
+        let red = Math.floor(Math.random() * 256)
+          .toString(16)
+          .padStart(2, "0");
+        let green = Math.floor(Math.random() * 256)
+          .toString(16)
+          .padStart(2, "0");
+        let blue = Math.floor(Math.random() * 256)
+          .toString(16)
+          .padStart(2, "0");
+        font_color = color + red + green + blue;
+      }
+      function draw() {
+        ctx.fillStyle = "rgba(0,0,0,0.05)";
+        ctx.fillRect(0, 0, canva.width, canva.height);
+        ctx.fillStyle = font_color;
+        ctx.font = `${font}px monospace`;
+        for (let i = 0; i < drops.length; i++) {
+          const text =
+            characters[Math.floor(Math.random() * characters.length)];
+          ctx.fillText(text, i * font, drops[i] * font);
+          drops[i]++;
+          if (drops[i] * font > canva.height && Math.random() > 0.975) {
+            drops[i] = 0;
+          }
         }
-        })
-        raincheck.addEventListener("change" ,() => {
-            if(raincheck.checked == true){
-                clearInterval(raininter)
-                clearinter = setInterval(clearrain,func_intveral);
-
-            }else{
-                clearInterval(clearinter);
-                raininter = setInterval(draw,func_intveral);
-            }
-        })
-        </script>
-    </body>
+      }
+      raininter = setInterval(draw, func_intveral);
+      window.addEventListener("resize", () => {
+        canva.width = window.innerWidth;
+        canva.height = window.innerHeight;
+      });
+      const colorsec = document.getElementById("colorsec");
+      colorsec.value = font_color;
+      colorsec.addEventListener("input", () => {
+        font_color = colorsec.value;
+      });
+      let colorcheckbox = document.getElementById("autocolor");
+      colorcheckbox.addEventListener("change", () => {
+        if (colorcheckbox.checked == true) {
+          colorinter = setInterval(randcolor, 1000);
+        } else if (colorcheckbox.checked == false) {
+          clearInterval(colorinter);
+        }
+      });
+      raincheck.addEventListener("change", () => {
+        if (raincheck.checked == true) {
+          clearInterval(raininter);
+          clearinter = setInterval(clearrain, func_intveral);
+        } else {
+          clearInterval(clearinter);
+          raininter = setInterval(draw, func_intveral);
+        }
+      });
+    </script>
+  </body>
 </html>
