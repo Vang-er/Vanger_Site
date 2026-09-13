@@ -10,11 +10,20 @@
     color: white;
 }
 .softk table{
-    border-collapse: collapse;
+    border-spacing: 0px;
+    border-radius: 20px;
+    border-collapse: separate;
     width: 100%;
+    overflow: hidden;
+}
+.softk table tr{
+    /* background-color: rgba(36, 74, 30, 0.636); */
+    background-color: rgba(83, 83, 83, 0.406);
+    border: 0px;
+    border-radius: 40px;
 }
 .softk table tr td{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     padding: 10px;
 }
 .softk table tr td:first-child,.softk table tr td:last-child{
@@ -43,4 +52,7 @@
 .background{
     width: 100vw;
     height: 100vh;
+}
+.progress{
+    background: transparent;
 }
