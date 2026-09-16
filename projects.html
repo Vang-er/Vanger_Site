@@ -11,16 +11,54 @@
       .projectcard {
         margin: 10px;
         color: white;
-        width: 25vw;
+        width: auto;
         height: 300px;
         background-color: rgba(45, 38, 38, 0.767);
         border-left: 5px red solid;
         border-radius: 20px;
+        transition: scale 0.2s;
         /* animation: expand 3s linear; */
       }
       .projectcard:hover {
         /* animation: expand 0.5s linear; */
         scale: 105%;
+      }
+      .soon {
+        display: flex;
+        font-weight: bold;
+        font-size: xx-large;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: middle;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        align-items: center;
+        height: 100%;
+      }
+      .projectcard .title {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 40px;
+        justify-content: center;
+      }
+      .projectcard .content {
+        font-size: clamp(16px, 1.5vw, 24px);
+        font-family: fantasy;
+        margin: 10px;
+      }
+      .projectcard .purpose {
+        background-color: rgba(181, 18, 18, 0.662);
+        width: fit-content;
+        margin-left: 5px;
+        margin-top: 5px;
+        padding: 5px;
+        border-radius: 20px;
+      }
+      .linkimg:hover {
+        scale: 110%;
       }
     </style>
   </head>
@@ -137,14 +175,89 @@
       "
     >
       Welcome to my
-      <span style="font-size: 70px; color: red">Great</span>
+      <span
+        style="
+          font-size: 70px;
+          color: red;
+          align-items: center;
+          vertical-align: middle;
+        "
+        >Great</span
+      >
       projects page
     </div>
-    <div style="display: flex; gap: 20px">
-      <div class="projectcard"></div>
-      <div class="projectcard"></div>
-      <div class="projectcard"></div>
-      <div class="projectcard"></div>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      "
+    >
+      <div class="projectcard">
+        <div class="title">VDownloader</div>
+        <div class="content">
+          Cross platform GUI warper for yt-dlp library and its depencies built
+          using flutter and python.
+        </div>
+        <div class="purpose">Made for Horizons</div>
+        <div
+          style="
+            display: flex;
+            margin-top: 10px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+          "
+        >
+          <a
+            class="linkimg"
+            href="https://www.github.com/vang-er/vdownloader"
+            style="cursor: pointer; margin-bottom: 20px"
+            ><img src="github.png" style="height: auto; width: 120px"
+          /></a>
+          <div
+            style="
+              width: 2.5px;
+              height: 100px;
+              background-color: gray;
+              display: flex;
+              transform: translateY(-25px);
+            "
+          ></div>
+          <a
+            class="linkimg"
+            href="https://github.com/Vang-er/VDownloader/releases/tag/android-release-v0-2"
+            style="cursor: pointer; margin-bottom: 20px; margin-left: 10px"
+            ><img src="image.png" style="height: auto; width: 80px"
+          /></a>
+        </div>
+      </div>
+      <div class="projectcard">
+        <div class="title">This Site!</div>
+        <div class="content">
+          Yes,this site is one of the projects i am proud of,i made it with
+          Vanilia CSS and JS!
+        </div>
+        <div class="purpose">made for UNKOWN</div>
+        <div
+          style="
+            display: flex;
+            margin-top: 10px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+          "
+        >
+          <a
+            class="linkimg"
+            href="https://github.com/Vang-er/Vanger_Site"
+            style="cursor: pointer; margin-bottom: 20px"
+            ><img src="github.png" style="height: auto; width: 120px"
+          /></a>
+        </div>
+      </div>
+      <div class="projectcard"><div class="soon">Coming soon.....</div></div>
+      <div class="projectcard"><div class="soon">Coming soon.....</div></div>
     </div>
   </body>
 </html>
