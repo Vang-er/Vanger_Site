@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My Projects</title>
+    <link rel="icon" href="fav.ico" />
+    <script src="script2.js"></script>
+    <style>
+      body {
+        margin: 0px;
+      }
+      .projectcard {
+        margin: 10px;
+        color: white;
+        width: 25vw;
+        height: 300px;
+        background-color: rgba(45, 38, 38, 0.767);
+        border-left: 5px red solid;
+        border-radius: 20px;
+        /* animation: expand 3s linear; */
+      }
+      .projectcard:hover {
+        /* animation: expand 0.5s linear; */
+        scale: 105%;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas
+      id="background"
+      style="
+        inset: 0;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: -1;
+      "
+    ></canvas>
+    <div
+      class="setwindow"
+      style="
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        width: 250px;
+        height: 150px;
+        background-color: rgba(31, 48, 28, 0.823);
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+      "
+    >
+      <input
+        type="color"
+        id="colorsec"
+        style="
+          display: grid;
+          cursor: pointer;
+          border: none;
+          padding: 0px;
+          border-radius: 40px;
+          width: 40px;
+          height: 40px;
+          display: grid;
+          place-items: center;
+          margin-left: 10px;
+        "
+      />
+      <div
+        style="
+          color: white;
+          display: grid;
+          place-items: center;
+          font-size: large;
+          font-family:
+            &quot;Segoe UI&quot;, Tahoma, Geneva, Verdana, sans-serif;
+        "
+      >
+        Set rain Colour
+      </div>
+      <input
+        id="autocolor"
+        type="checkbox"
+        style="
+          display: grid;
+          place-items: center;
+          margin-left: 10px;
+          width: 30px;
+          margin-top: 10px;
+          margin-left: 20px;
+          width: 20px;
+          height: 20px;
+        "
+      />
+      <div
+        style="
+          color: white;
+          display: grid;
+          cursor: pointer;
+          place-items: center;
+        "
+      >
+        Auto Changing color
+      </div>
+      <input
+        id="raincheck"
+        type="checkbox"
+        style="
+          display: grid;
+          place-items: center;
+          margin-left: 10px;
+          width: 30px;
+          margin-left: 20px;
+          width: 20px;
+          height: 20px;
+        "
+      />
+      <div
+        style="
+          color: white;
+          display: grid;
+          cursor: pointer;
+          place-items: center;
+        "
+      >
+        Turn off the rain
+      </div>
+    </div>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 30px;
+      "
+    >
+      Welcome to my
+      <span style="font-size: 70px; color: red">Great</span>
+      projects page
+    </div>
+    <div style="display: flex; gap: 20px">
+      <div class="projectcard"></div>
+      <div class="projectcard"></div>
+      <div class="projectcard"></div>
+      <div class="projectcard"></div>
+    </div>
+  </body>
+</html>
